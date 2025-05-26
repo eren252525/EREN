@@ -1,0 +1,1403 @@
+
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<title>Bakımlar</title>
+<style>
+    body { background-color: #121212; color: white; font-family: Arial; padding: 20px; }
+    .table { border: 1px solid #fff; padding: 15px; margin-bottom: 15px; border-radius: 8px; background: #1e1e1e; }
+    .table p { margin: 5px 0; }
+    input { margin-left: 10px; padding: 3px; }
+  </style>
+</head>
+<body>
+<div style="padding: 10px; text-align: center;">
+  <input type="text" id="searchBox" onkeyup="searchFunction()" placeholder="Ara..." style="padding: 10px; width: 50%; font-size: 16px;">
+</div>
+<script>
+function searchFunction() {
+  var input, filter, forms, i, inputs, found;
+  input = document.getElementById("searchBox");
+  filter = input.value.toLowerCase();
+  forms = document.querySelectorAll("form, div, section, article, table, ul");
+
+  if (!filter) {
+    forms.forEach(function(form) {
+      form.style.display = "";
+    });
+    return;
+  }
+
+  forms.forEach(function(form) {
+    found = false;
+    inputs = form.querySelectorAll("input, textarea, select");
+    inputs.forEach(function(inp) {
+      let val = inp.value || inp.placeholder || "";
+      if (val.toLowerCase().indexOf(filter) > -1) {
+        found = true;
+      }
+    });
+    if (found) {
+      form.style.display = "";
+    } else {
+      form.style.display = "none";
+    }
+  });
+}
+</script>
+
+<h1>Bakımlar</h1>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="ILICA"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="A1 TOKİ"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="ŞİFRE YOK"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="SEFA"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05456428969">📞 05456428969</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="600 TL"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=39.947550, 41.108049" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="ILICA"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="A 5 TOKİ"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="ŞİFRE YOK"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="ABDULLAH"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05354598351">📞 05354598351</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="600 TL"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=39.947550, 41.108049" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="ILICA"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="A 7 TOKİ"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="2580#"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="AHMET"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05377683761">📞 05377683761</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="600 TL"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=39.947550, 41.108049" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="ILICA"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="C 11 TOKİ"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="ŞİFRE YOK"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="ÖZKAN SEKMEN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05362672940">📞 05362672940</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="600 TL"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=39.947431, 41.110515" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="ILICA"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="C 12 TOKİ"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="ŞİFRE YOK"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="YAŞAR "/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05459664594">📞 05459664594</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="600 TL"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=39.947431, 41.110515" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="ILICA"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="C 13 TOKİ"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="ŞİFRE YOK"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="HALİT"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05382025615">📞 05382025615</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=" target=39.947431, 41.110515"_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="ILICA"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="E 6 TOKİ"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="ŞİFRE YOK"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="SONER"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05469735825">📞 05469735825</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="600 TL"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=39.947431, 41.110515" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="ILICA"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="E 7 TOKİ"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="ŞİFRE YOK"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="MÜSTAGİM"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05345950405">📞 05345950405</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="600 TL"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=" target=39.947431, 41.110515"_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="ILICA"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="F 4 TOKİ"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="ŞİFRE YOK"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="KÜRŞAT"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05330837606">📞 05330837606</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="1000"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=C" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="ILICA"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="F 8 TOKİ"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="ŞİFRE YOK"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="SİTE YÖNETİMİ"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:SİTE">📞 SİTE </a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="SİTE 1000 TL"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=39.944756, 41.119504" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value=""/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+<div class="table">
+<p>YER: <input readonly="" type="text" value="EREN"/></p>
+<p>BİNA ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>KAPI ŞİFRESİ: <input readonly="" type="text" value="EREN"/></p>
+<p>YÖNETİCİ ADI: <input readonly="" type="text" value="EREN"/></p>
+<p>GÖREVLİ TEL NO: <a href="tel:05551234567">📞 05551234567</a></p>
+<p>BAKIM ÜCRETİ: <input readonly="" type="text" value="EREN"/></p>
+<p>KONUM BİLGİSİ: <a href="https://maps.google.com/?q=41.0082,28.9784" target="_blank">📍 Haritada Aç</a></p>
+</div>
+</body>
+</html>

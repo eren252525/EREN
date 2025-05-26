@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<title>Revizyonlar</title>
+<style>
+    body { background-color: #121212; color: white; font-family: Arial; padding: 20px; }
+    .table { border: 1px solid #fff; padding: 15px; margin-bottom: 15px; border-radius: 8px; background: #1e1e1e; }
+    .table p { margin: 5px 0; }
+    input { margin-left: 10px; padding: 3px; }
+  </style>
+</head>
+<body>
+<div style="padding: 10px; text-align: center;">
+  <input type="text" id="searchBox" onkeyup="searchFunction()" placeholder="Ara..." style="padding: 10px; width: 50%; font-size: 16px;">
+</div>
+<script>
+function searchFunction() {
+  var input, filter, forms, i, inputs, found;
+  input = document.getElementById("searchBox");
+  filter = input.value.toLowerCase();
+  forms = document.querySelectorAll("form, div, section, article, table, ul");
+
+  if (!filter) {
+    forms.forEach(function(form) {
+      form.style.display = "";
+    });
+    return;
+  }
+
+  forms.forEach(function(form) {
+    found = false;
+    inputs = form.querySelectorAll("input, textarea, select");
+    inputs.forEach(function(inp) {
+      let val = inp.value || inp.placeholder || "";
+      if (val.toLowerCase().indexOf(filter) > -1) {
+        found = true;
+      }
+    });
+    if (found) {
+      form.style.display = "";
+    } else {
+      form.style.display = "none";
+    }
+  });
+}
+</script>
+
+<h1>Revizyonlar</h1>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+<div class="table">
+<p>YER: <input value="EREN"/></p>
+<p>BİNA İSMİ: <input value="EREN"/></p>
+<p>KONUM: <input value="EREN"/></p>
+<p>ETİKET RENGİ: <input value="EREN"/></p>
+<p>EKSİKLER: <input value="EREN"/></p>
+<p>GEREKEN MALZEME: <input value="EREN"/></p>
+<p>YAPILDI / YAPILMADI: <input value="EREN"/></p>
+</div>
+</body>
+</html>
