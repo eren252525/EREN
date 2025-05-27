@@ -17,15 +17,41 @@
             height: 100vh;
         }
 
-        h1 {
-            font-size: 3em;
+        .login-box {
+            background-color: #1a1a1a;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            text-align: center;
         }
 
-        input[type="password"],
-        button {
+        .login-box h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .login-box input[type="password"],
+        .login-box button {
             padding: 10px;
             margin-top: 10px;
             font-size: 1em;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-box input[type="password"] {
+            margin-bottom: 10px;
+        }
+
+        .login-box button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .login-box button:hover {
+            background-color: #45a049;
         }
 
         a {
@@ -35,9 +61,11 @@
     </style>
 </head>
 <body>
-    <h1>Çağrı Lift Giriş</h1>
-    <input type="password" id="password" placeholder="Şifre">
-    <button onclick="giris()">Giriş Yap</button>
+    <div class="login-box">
+        <h1>Çağrı Lift Giriş</h1>
+        <input type="password" id="password" placeholder="Şifre">
+        <button onclick="giris()">Giriş Yap</button>
+    </div>
 
     <script>
         function giris() {
@@ -51,3 +79,4 @@
     </script>
 </body>
 </html>
+
